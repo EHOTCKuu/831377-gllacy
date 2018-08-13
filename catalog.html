@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Проект «Глейси»-Каталог</title>
+    </head>
+
+    <body>
+<!--Чердак-->
+        <header class="main-header">
+            <nav class="main-navigation">
+                <a class="main-header-logo">
+                    <img src="ice-logo.png" alt="Логотип Глайси Шоп">
+                </a>
+                <ul class="user-navigation">
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="delivery.html">Доставка и оплата</a></li>
+                    <li><a href="info.html">О Компании</a></li>
+                </ul>
+                <div class="user-control">
+                    <section class="search">
+                        <h3 class="search-visual">Поиск</h3>
+                        <!-- Здесь будет форма Поиска-->
+                    </section>
+
+                    <section class="user-connect">
+                        <h3 class="enter">Вход</h3>
+                        <!-- Здесь будет форма Входа-->
+                    </section>
+
+                    <section class="sale">
+                        <h3 class="sale-visual">Корзина</h3>
+                        <!-- Здесь будет форма Корзины-->
+                    </section>
+                </div>
+            </nav>
+            <div class="schedule">
+                <h3>с 10 до 20,ежедневно</h3>
+                <h2> 8 812 450-25-25</h2>
+            </div>
+        </header>
+<!--Чердак-->
+
+<!--Основная информация-->
+<main class="container">
+        <ul class="page">
+                <li><a href ="index.html">Главная</a></li>
+                <li><a href="catalog-full.html">Каталог</a></li>
+                <li class="page-current">Сливочное</li>
+        </ul>
+        <h1>Сливочное мороженое</h1>
+        <!--Форма сортировки-->
+        <form class="choice">
+            <div class="sorting">
+                Сортировка:
+                <select class="sort">
+                    <option>По популярности</option>
+                    <option>По цене</option>
+                </select>
+            </div>
+            <div class="price">
+                Цена:100 руб.-500руб.
+                <div class="price-range">
+                    <input type="range" min="0" max="1000" step="1" value="50"> 
+                </div>
+            </div>
+            <div class="fat">
+                Жирность:
+                <form action="">
+                    <input name="fat" type="radio" value="nofat"> 0%
+                    <input name="fat" type="radio" value="10%"checked> до 10%
+                    <input name="fat" type="radio" value="30%">до 30%
+                    <input name="fat" type="radio" value="bigfat"> выше 30%
+                </form> 
+            </div>
+
+            <div class="fillers">
+                Наполнители:
+                <input type="checkbox" name="fillers" value="shockolad">шоколадные
+                <input type="checkbox" name="fillers" value="sugar">сахарные присыпки
+                <input type="checkbox" name="fillers" value="fruits">фрукты
+                <input type="checkbox" name="fillers" value="sirop">сиропы
+                <input type="checkbox" name="fillers" value="jem">джемы
+            </div>
+                <button>Применить</button>
+        </form>
+        <!--Форма сортировки-->
+
+<!--Каталог-->
+    <ul class="price-ice">
+        <li class="catalog-item">
+            <img src="Orangeice.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            310 ₽/кг
+            <a href="#orange" class="ice-font">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            <!--При наведении выделяет карточку товара и добавляет кнопку быстрый просмотр-->
+            <a class="button" href="action-hower.html">Быстрый просмотр</a>
+        </li>
+        <li class="catalog-item">
+            <img src="cofeice.png" alt="Сливочно-кофейное с кусочками шоколада">
+            380 ₽/кг
+            <a href="#cofe" class="ice-font">Сливочно-кофейное с кусочками шоколада</a>
+            <!--При наведении выделяет карточку товара и добавляет кнопку быстрый просмотр-->
+            <a class="button" href="action-hower.html">Быстрый просмотр</a>
+        </li>
+        <li class="catalog-item">
+            <img src="strawberryice.png" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            355 ₽/кг
+            <a href="#strawberry" class="ice-font">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            <!--При наведении выделяет карточку товара и добавляет кнопку быстрый просмотр-->
+            <a class="button" href="action-hower.html">Быстрый просмотр</a>
+        </li>
+        <li class="catalog-item">
+            <img src="caramelice.png" alt="Сливочное крем-брюле с карамельной подливкой">
+            415 ₽/кг
+            <a href="#caramel" class="ice-font">Сливочное крем-брюле с карамельной подливкой</a>
+            <!--При наведении выделяет карточку товара и добавляет кнопку быстрый просмотр-->
+            <a class="button" href="action-hower.html">Быстрый просмотр></a>
+        </li>
+        <li class="catalog-item">
+            <img src="lingonberryice.png" alt="Сливочное с брусничным джемом">
+            325 ₽/кг
+            <a href="#lingon" class="ice-font">Сливочное с брусничным джемом</a>
+            <!--При наведении выделяет карточку товара и добавляет кнопку быстрый просмотр-->
+            <a class="button" href="action-hower.html">Быстрый просмотр</a>
+        </li>
+        <li class="catalog-item">
+            <img src="blueberriesice.png" alt="Сливочно-черничное с цельными ягодами черники">
+            410 ₽/кг
+            <a href="#blue" class="ice-font">Сливочно-черничное с цельными ягодами черники</a>
+            <!--При наведении выделяет карточку товара и добавляет кнопку быстрый просмотр-->
+            <a class="button" href="action-hower.html">Быстрый просмотр</a>
+        </li>
+        <li class="catalog-item">
+            <img src="Limoneice.png" alt="Сливочно-лимонное с карамельной присыпкой">
+            375 ₽/кг
+            <a href="#limon" class="ice-font">Сливочно-лимонное с карамельной присыпкой</a>
+            <!--При наведении выделяет карточку товара и добавляет кнопку быстрый просмотр-->
+            <a class="button" href="action-hower.html">Быстрый просмотр</a>
+        </li>
+        <li class="catalog-item">
+            <img src="shoko.png" alt="Сливочное с шоколадной стружкой">
+            320 ₽/кг
+            <a href="#shoko" class="ice-font">Сливочное с шоколадной стружкой</a>
+            <!--При наведении выделяет карточку товара и добавляет кнопку быстрый просмотр-->
+            <a class="button" href="action-hower.html">Быстрый просмотр</a>
+        </li>
+        <li class="catalog-item">
+            <img src="vanille.png" alt="Сливочно-ванильное с кусочками шоколада">
+            440 ₽/кг
+            <a href="#vanille" class="ice-font">Сливочно-ванильное с кусочками шоколада</a>
+            <!--При наведении выделяет карточку товара и добавляет кнопку быстрый просмотр-->
+            <a class="button" href="action-hower.html">Быстрый просмотр</a>
+        </li>
+        <li class="catalog-item">
+            <img src="mentol.png" alt="Сливочное с ментоловым сиропом">
+            435 ₽/кг
+            <a href="#mentol" class="ice-font">Сливочное с ментоловым сиропом</a>
+            <!--При наведении выделяет карточку товара и добавляет кнопку быстрый просмотр-->
+            <a class="button" href="action-hower.html">Быстрый просмотр</a>
+        </li>
+        <li class="catalog-item">
+            <img src="black.png" alt="Сливочное с кусочками шоколада">
+            355 ₽/кг
+            <a href="#black" class="ice-font">Сливочное с кусочками шоколада</a>
+            <!--При наведении выделяет карточку товара и добавляет кнопку быстрый просмотр-->
+            <a class="button" href="action-hower.html">Быстрый просмотр</a>
+        </li>
+        <li class="catalog-item">
+            <img src="mint.png" alt="Сливочное с мятным сиропом">
+            415 ₽/кг
+            <a href="#mint" class="ice-font">Сливочное с мятным сиропом</a>
+            <!--При наведении выделяет карточку товара и добавляет кнопку быстрый просмотр-->
+            <a class="button" href="action-hower.html">Быстрый просмотр</a>
+        </li>
+
+</ul>
+<!--Каталог-->
+<!--Страницы-->
+        <ul class="pagination-list">
+            <li class="pagination-item pagination-item-current"><a >1</a></li>
+            <li class="pagination-item "><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item"><a href="#">4</a></li>
+            <li class="pagination-item"><a href="#">5</a></li>
+        </ul>
+<!--Страницы-->        
+ </main>
+<!--Основная информация-->
+
+
+
+
+
+<!--Подвал-->
+    <footer class="main-footer">
+        <div class="footer-social">
+            <ul>
+                <li><a class="social-button" href="#">Твиттер</a></li>
+                <li><a class="social-button" href="#">Инстаграм</a></li>
+                <li><a class="social-button" href="#">Фейсбук</a></li>
+                <li><a class="social-button" href="#">Вконтакте</a></li>
+            </ul>
+        </div>
+        <p class="footer-info">
+            <ul>
+                <li><a class="social-button" href="#">♥ Для поставщиков</a></li>
+                <li><a class="social-button" href="#">О производстве</a></li>
+                <li><a class="social-button" href="#">Наши документы</a></li>
+                <li><a class="social-button" href="#">Экологические стандарты</a></li>
+            </ul>
+        </p>
+        <p class="footer-copyright">
+            <img src="htmlacademy.png" alt="Логотип Академии">
+              <b>Разработано:</b> 
+              <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+        </p>
+    </footer>  
+<!--Подвал-->
+
+<!--Форма входа-->
+    <section class="login">
+        <h2>Вход</h2>
+        <p>Электронная почта</p>
+        <p>Пароль</p>
+        <button>Войти</button>
+        <a href="#brain">Забыли пароль?</a>
+        <a href="#registration">Новая регистрация</a> 
+    </section>  
+<!--Форма входа-->  
+<!--Форма поиска--> 
+    <section class="search">
+        <h2>Значок лупы типа</h2>
+        <input type="text" placeholder="Что ищем?" value="" name="">
+    </section>
+<!--Форма поиска-->
+<!--Форма магазина-->
+    <section class="magazin">
+            <h2>Пусто</h2>
+            <hr>
+            <p>Итого:</p>
+            <a href="#sales">Оформить заказ</a>
+    </section> 
+<!--Форма Магазина--> 
+</body>
+</html>
