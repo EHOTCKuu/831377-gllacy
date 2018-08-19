@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Проект «Глейси Шоп»-Каталог</title>
+    </head>
+
+    <body>
+<!--Начало блока "Чердак"-->
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="img/ice-logo.png" width="100%" alt="Логотип Глейси Шоп"></a>f
+            </div>
+            <nav class="main-menu">
+                <ul class="user-navigation">
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="delivery.html">Доставка и оплата</a></li>
+                    <li><a href="info.html">О Компании</a></li>
+                </ul>
+                <div class="user-control">
+                    <section class="search">
+                        <p class="search-visual">Поиск</p>
+                        <!--Начало Формы поиска-->
+                        <section class="search">
+                            <p>Значок лупы типа</p>
+                            <input type="text" placeholder="Что ищем?" value="" name="">
+                        </section>
+                        <!--конец формы поиска-->
+                    </section>
+                    <section class="user-connect">
+                        <p class="enter">Вход</p>
+                        <!--Начало Формы входа-->
+                        <section class="login">
+                            <p>Вход</p>
+                            <p>Электронная почта</p>
+                            <p>Пароль</p>
+                            <button>Войти</button>
+                            <a href="#brain">Забыли пароль?</a>
+                            <a href="#registration">Новая регистрация</a>
+                        </section>
+                        <!--Конец формы входа-->
+                    </section>
+                    <section class="sale">
+                        <p class="sale-visual">Корзина</p>
+                        <!--Начало формы магазина-->
+                        <section class="shop">
+                            <p>Пусто</p>
+                            <hr>
+                            <p>Итого:</p>
+                            <a href="#sales">Оформить заказ</a>
+                        </section>
+                        <!--Конец формы магазина-->
+                    </section>
+                </div>
+            </nav>
+            <div class="banner">
+                с 10 до 20,ежедневно
+                <strong>8 812 450-25-25</strong>
+            </div>
+        </header>
+<!--Конец блока "Чердак"-->
+<!--Начало блока "Основная информация"-->
+        <main class="container">
+            <ul class="pagination">
+                <li><a href ="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li class="page-current">Сливочное</li>
+            </ul>
+            <h1>Сливочное мороженое</h1>
+            <!--Начало Формы сортировки-->
+            <form class="choice">
+                <div class="sorting">
+                    Сортировка:
+                    <select class="sort">
+                        <option>по популярности</option>
+                        <option>cначала недорогие</option>
+                        <option>сначала дорогие</option>
+                        <option>по жирности</option>
+                    </select>
+                </div>
+                <div class="price">
+                    Цена:100 руб.-500руб.
+                    <div class="price-range">
+                        <input type="range" min="0" max="1000" step="1" value="50">
+                    </div>
+                </div>
+                <div class="fat">
+                    Жирность:
+                    <form action="">
+                        <input name="fat" type="radio" value="nofat"> 0%
+                        <input name="fat" type="radio" value="10%"checked> до 10%
+                        <input name="fat" type="radio" value="30%">до 30%
+                        <input name="fat" type="radio" value="bigfat"> выше 30%
+                    </form>
+                </div>
+
+                <div class="fillers">
+                    Наполнители:
+                    <input type="checkbox" name="fillers" value="shockolad">шоколадные
+                    <input type="checkbox" name="fillers" value="sugar">сахарные присыпки
+                    <input type="checkbox" name="fillers" value="fruits">фрукты
+                    <input type="checkbox" name="fillers" value="sirop">сиропы
+                    <input type="checkbox" name="fillers" value="jem">джемы
+                </div>
+                <button>Применить</button>
+            </form>
+            <!--Конец формы сортировки-->
+    <!--Начало блока "Каталог"-->
+            <ul class="price-ice">
+                <li class="catalog-item">
+                    <div class="item-img">
+                        <img src="img/Orangeice.png" width="100%" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                    </div>
+                    310 ₽/кг
+                    <a href="#orange" class="ice-font">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                        <!--При наведении выделяет карточку товара и добавляет кнопку быстрый просмотр-->
+                        <a class="button" href="action-hover.html">Быстрый просмотр</a>
+                </li>
+                <li class="catalog-item">
+                    <div class="item-img">
+                        <img src="img/cofeice.png" width="100%" alt="Сливочно-кофейное с кусочками шоколада">
+                    </div>
+                    380 ₽/кг
+                    <a href="#cofe" class="ice-font">Сливочно-кофейное с кусочками шоколада</a>
+                        <!--При наведении выделяет карточку товара и добавляет кнопку быстрый просмотр-->
+                        <a class="button" href="action-hover.html">Быстрый просмотр</a>
+                </li>
+                <li class="catalog-item">
+                    <div class="item-img">
+                        <img src="img/strawberryice.png" width="100%" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                    </div>
+                    355 ₽/кг
+                    <a href="#strawberry" class="ice-font">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                        <!--При наведении выделяет карточку товара и добавляет кнопку быстрый просмотр-->
+                        <a class="button" href="action-hover.html">Быстрый просмотр</a>
+                </li>
+                <li class="catalog-item">
+                    <div class="item-img">
+                        <img src="img/caramelice.png" width="100%" alt="Сливочное крем-брюле с карамельной подливкой">
+                    </div>
+                    415 ₽/кг
+                    <a href="#caramel" class="ice-font">Сливочное крем-брюле с карамельной подливкой</a>
+                        <!--При наведении выделяет карточку товара и добавляет кнопку быстрый просмотр-->
+                        <a class="button" href="action-hover.html">Быстрый просмотр></a>
+                </li>
+                <li class="catalog-item">
+                    <div class="item-img">
+                        <img src="img/lingonberryice.png" width="100%" alt="Сливочное с брусничным джемом">
+                    </div>
+                    325 ₽/кг
+                    <a href="#lingon" class="ice-font">Сливочное с брусничным джемом</a>
+                        <!--При наведении выделяет карточку товара и добавляет кнопку быстрый просмотр-->
+                        <a class="button" href="action-hover.html">Быстрый просмотр</a>
+                </li>
+                <li class="catalog-item">
+                    <div class="item-img">
+                        <img src="img/blueberriesice.png" width="100%" alt="Сливочно-черничное с цельными ягодами черники">
+                    </div>
+                    410 ₽/кг
+                    <a href="#blue" class="ice-font">Сливочно-черничное с цельными ягодами черники</a>
+                        <!--При наведении выделяет карточку товара и добавляет кнопку быстрый просмотр-->
+                        <a class="button" href="action-hover.html">Быстрый просмотр</a>
+                </li>
+                <li class="catalog-item">
+                    <div class="item-img">
+                        <img src="img/Limoneice.png" width="100%" alt="Сливочно-лимонное с карамельной присыпкой">
+                    </div>
+                    375 ₽/кг
+                    <a href="#limon" class="ice-font">Сливочно-лимонное с карамельной присыпкой</a>
+                        <!--При наведении выделяет карточку товара и добавляет кнопку быстрый просмотр-->
+                        <a class="button" href="action-hover.html">Быстрый просмотр</a>
+                </li>
+                <li class="catalog-item">
+                    <div class="item-img">
+                        <img src="img/shoko.png" width="100%" alt="Сливочное с шоколадной стружкой">
+                    </div>
+                    320 ₽/кг
+                    <a href="#shoko" class="ice-font">Сливочное с шоколадной стружкой</a>
+                        <!--При наведении выделяет карточку товара и добавляет кнопку быстрый просмотр-->
+                        <a class="button" href="action-hover.html">Быстрый просмотр</a>
+                </li>
+                <li class="catalog-item">
+                    <div class="item-img">
+                        <img src="img/vanille.png" width="100%" alt="Сливочно-ванильное с кусочками шоколада">
+                    </div>
+                    440 ₽/кг
+                    <a href="#vanille" class="ice-font">Сливочно-ванильное с кусочками шоколада</a>
+                        <!--При наведении выделяет карточку товара и добавляет кнопку быстрый просмотр-->
+                        <a class="button" href="action-hover.html">Быстрый просмотр</a>
+                </li>
+                <li class="catalog-item">
+                    <div class="item-img">
+                        <img src="img/mentol.png" width="100%" alt="Сливочное с ментоловым сиропом">
+                    </div>
+                    435 ₽/кг
+                    <a href="#mentol" class="ice-font">Сливочное с ментоловым сиропом</a>
+                        <!--При наведении выделяет карточку товара и добавляет кнопку быстрый просмотр-->
+                        <a class="button" href="action-hover.html">Быстрый просмотр</a>
+                </li>
+                <li class="catalog-item">
+                    <div class="item-img">
+                        <img src="img/black.png" width="100%" alt="Сливочное с кусочками шоколада">
+                    </div>
+                    355 ₽/кг
+                    <a href="#black" class="ice-font">Сливочное с кусочками шоколада</a>
+                        <!--При наведении выделяет карточку товара и добавляет кнопку быстрый просмотр-->
+                        <a class="button" href="action-hover.html">Быстрый просмотр</a>
+                </li>
+                <li class="catalog-item">
+                    <div class="item-img">
+                        <img src="img/mint.png" width="100%" alt="Сливочное с мятным сиропом">
+                    </div>
+                    415 ₽/кг
+                    <a href="#mint" class="ice-font">Сливочное с мятным сиропом</a>
+                        <!--При наведении выделяет карточку товара и добавляет кнопку быстрый просмотр-->
+                        <a class="button" href="action-hover.html">Быстрый просмотр</a>
+                </li>
+
+            </ul>
+    <!--Конец блока "Каталог"-->
+    <!--Начало блока "Список страниц"-->
+            <ul class="pagination-list">
+                <li class="pagination-item pagination-item-current"><a >1</a></li>
+                <li class="pagination-item "><a href="#">2</a></li>
+                <li class="pagination-item"><a href="#">3</a></li>
+                <li class="pagination-item"><a href="#">4</a></li>
+                <li class="pagination-item"><a href="#">5</a></li>
+            </ul>
+    <!--Конец блока "Список страниц"-->
+        </main>
+<!--Конец блока "Основная информация"-->
+<!--Начало блока "Подвал"-->
+        <footer class="main-footer">
+            <div class="footer-social">
+                <ul class="social-list">
+                    <li><a class="social-button" href="#">Твиттер</a></li>
+                    <li><a class="social-button" href="#">Инстаграм</a></li>
+                    <li><a class="social-button" href="#">Фейсбук</a></li>
+                    <li><a class="social-button" href="#">Вконтакте</a></li>
+                </ul>
+            </div>
+            <p class="footer-info">
+                <ul class="info-list">
+                    <li><a class="info-link" href="#">♥ Для поставщиков</a></li>
+                    <li><a class="info-link" href="#">О производстве</a></li>
+                    <li><a class="info-link" href="#">Наши документы</a></li>
+                    <li><a class="info-link" href="#">Экологические стандарты</a></li>
+                </ul>
+            </p>
+            <p class="footer-copyright">
+                <a href="https://htmlacademy.ru/intensive/htmlcss" class="academy-img"><img src="img/htmlacademy.png" width="100%" alt="Логотип Академии"></a>
+                <strong>Разработано:</strong>
+                <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+            </p>
+        </footer>
+<!--Конец блока "Подвал"-->
+</body>
+</html>
