@@ -34,16 +34,23 @@
             <!--Конец формы поиска-->
           </section>
           <section class="user-connect">
-            <p class="enter"><img src="img/heder_inter.png"width="21px" height="19px" alt="Вход">Вход</p>
+            <a class="enter" href="login.html"><img src="img/heder_inter.png"width="21px" height="19px" alt="Вход">Вход</a>
             <!--Начало Формы входа-->
-            <section class="login">
-              <p>Вход</p>
-              <p>Электронная почта</p>
-              <p>Пароль</p>
-              <button>Войти</button>
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label class="visually-hidden" for="user-email">Электронная почта</label>
+                <input class="login-user" type="text" id="user-email" name="email" placeholder="Электронная почта">
+              </p>
+              <p>
+                <label class="visually-hidden" for="user-password">Пароль</label>
+                <input class="login-password" type="password" for="user-password" name="password" placeholder="Пароль">
+              </p>
+              <p class="login-info">
               <a href="#brain">Забыли пароль?</a>
               <a href="#registration">Новая регистрация</a>
-            </section>
+              </p>
+              <button class="button" type="submit">Войти</button>
+            </form>
             <!--Конец формы входа-->
           </section>
           <section class="sale">
@@ -157,10 +164,10 @@
         </section>
         <section class="subscribe">
           <h3>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</h3>
-            <form id="subscribe-form" method="post" action="">
+            <form id="subscribe-form" method="post" action="https://echo.htmlacademy.ru">
               <div class="submit-group">
                 <input type="text" placeholder="Электронная почта" value="" name="email">
-                <input type="submit" value="Отправить" name="submit">
+                <button class="button" type="submit">Отправить</button>
               </div>
             </form>
         </section>
@@ -168,10 +175,10 @@
       <!--Начало блока "Карта" -->
         <section class="map">
           <div class="map-img">
-          <img src="img/map_metka.png" width="182px" height="110px" alt="Метка">
-          <br>
-          <img src="img/map.jpg" width="1250px" height="430px" alt="Карта">
-        </div>
+            <img src="img/map_metka.png" width="182px" height="110px" alt="Метка">
+            <br>
+            <img src="img/map.jpg" width="1250px" height="430px" alt="Адрес главного офиса и офлайн магазина по адресу: ул. Большая Конюшенная 19\8, Санкт-Петербург">
+          </div>
           <section class="map-info">
             <h3>Адрес главного офиса и офлайн-магазина:
             <strong>ул. Большая Конюшенная
@@ -183,13 +190,19 @@
             <a class="button" href="action-forma.html">Форма обратной связи</a>
             <!--При нажатии кнопки вылезает форма обратной связи-->
             <div class="feedback">
-              Мы обязательно вам ответим! Х
-              <ul class="form-feedback">
-                <li><input type="text" placeholder="Как вас зовут?" value="" name=""></li>
-                <li><input type="text" placeholder="Ваша почта для ответа?" value="" name=""></li>
-                <li><textarea name="text" id="" rows="7" placeholder="Напишите что нибудь..."></textarea></li>
-                <input type="submit" value="Отправить" name="submit">
-              </ul>
+              Мы обязательно вам ответим! <button class="modal-close" type="button">Закрыть</button>
+              <form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
+                  <p class="appointment-item">
+                    <input id="appointment-date" type="text" name="date" value="" placeholder="Как вас зовут?">
+                  </p>
+                  <p class="appointment-item">
+                    <input id="appointment-time" type="text" name="time" value="" placeholder="Ваша почта для ответа?">
+                  </p>
+                  <p class="appointment-item">
+                    <textarea id="appointment-text" type="text" rows="7" name="text" value="" placeholder="Напишите что нибудь..."></textarea>
+                  </p>
+                  <button class="button" type="submit">Отправить</button>
+              </form>
             </div>
           </section>
         </section>
