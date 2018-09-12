@@ -141,6 +141,8 @@ a {
 }
 .hit-img {
 	position: absolute;
+	height:61px;
+	width:61px;
 }
 .price {
 	position: absolute;
@@ -176,6 +178,8 @@ a {
 }
 .item-img {
 	padding-bottom: 5px;
+	height:267px;
+	width:267px;
 }
 /* Блок Хиты и карточка товара Конец */
 
@@ -207,6 +211,8 @@ a {
 }
 .img-promo {
 	float: left;
+	height:49px;
+	width:49px;
 }
 h1 {
 	margin-top: 23px;
@@ -490,6 +496,11 @@ footer a:hover, body a:hover {
 .action {
 	background-color: rgb(208, 112, 88);
 }
+.sub-menu hr{
+	align:center;
+	size:1px;
+	width:124px;
+}
 .user-navigation .sub-menu {
 	position: absolute;
 	left: -5px;
@@ -499,7 +510,7 @@ footer a:hover, body a:hover {
 	list-style: none;
 	background-color: rgb(248, 247, 244);
 	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-	width: 140px;
+	width: 146px;
 	height: 171px;
 	border-radius: 5px;
 	font-size: 14px;
@@ -551,6 +562,8 @@ footer a:hover, body a:hover {
 	position: relative;
 	left: 27px;
 	top: 10px;
+	height:4px;
+	width:154px;
 }/* логотип*/
 
 .header-main {
@@ -847,7 +860,7 @@ li:hover .b-text {
 	justify-content: space-between;
 }
 .unit1 {
-	max-width: 33px;
+	width: 33px;
 	height: 33px;
 	padding-right: 10px;
 	padding-left: 10px;
@@ -857,6 +870,7 @@ li:hover .b-text {
 	max-width: 15px;
 	height: 17px;
 	margin-top: 0;
+	width:11px;
 }
 unit3 {
 	max-width: 160px;
@@ -1007,6 +1021,8 @@ footer {
 .social-button img {
 	border: 2px solid rgba(255, 255, 255, 0.6);
 	border-radius: 20px;
+	height:32px;
+	width:32px;
 }
 .social-list a:active {
 	opacity: 0.9;
@@ -1030,6 +1046,11 @@ footer {
 	padding: 0;
 	margin-left: 27px;
 	margin-top: 10px;
+}
+
+.academy-img {
+	height:39px;
+	width:108px;
 }
 /*Подчеркивания ссылок*/
 .info-list a {
@@ -1073,6 +1094,8 @@ footer {
 	border: none;
 	margin-left: -10px;
 	margin-top: 4px;
+	height:13px;
+	width:15px;
 }
 .footer-copyright {
 	display: flex;
@@ -1121,6 +1144,11 @@ h2 {
 /*Хлебные крошки Конец*/
 
 /*Блок фильтры Начало*/
+
+.bar{
+	margin-left: 7%;
+
+}
 .filters {
 	margin-bottom: 30px;
 	width: 1146px;
