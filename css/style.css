@@ -1053,7 +1053,7 @@ footer {
 	width:108px;
 }
 /*Подчеркивания ссылок*/
-.info-list a {
+.info-list a, .footer-copyright div a  {
 	text-decoration: none;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
@@ -1061,10 +1061,7 @@ footer {
 	text-decoration: none;
 	border-bottom: 1px solid rgb(246, 181, 165);
 }
-.copyright a {
-	text-decoration: none;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-}
+
 /*Подчеркивания ссылок*/
 .footer-main {
 	display: flex;
@@ -1414,13 +1411,29 @@ input[type="radio"]:disabled+label span {
 
 /*Попап начало*/
 .popup-feedback {
-	position: relative;
+	position: fixed;
 	display: none;
+	top: 20%;
+  left: 38%;
 	border-radius: 10px;
 	background-color: rgb(248, 247, 244);
 	width: 478px;
 	height: 443px;
+	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+	z-index:2000;
 }
+.popup-overlay{
+	display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1999;
+}
+
+
 .button-feedback {
 	position: relative;
 	color: white;
@@ -1453,11 +1466,37 @@ input[type="radio"]:disabled+label span {
 	background-image: -ms-linear-gradient( 90deg, rgb(242, 104, 67) 0%, rgb(231, 74, 53) 100%);
 	box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
 }
-.image-feedback {
-	float: right;
-	margin-right: 15px;
-	margin-top: 15px;
+
+.modal-close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 22px;
+	height: 22px;
+  	font-size: 0;
+	border: 0;
+	  cursor: pointer;
+	  background-color: rgb(248, 247, 244);
+  }
+  .modal-close::before,
+.modal-close::after {
+  content: "";
+  top: 10px;
+  left: 2px;
+  position: absolute;
+
+  width: 19px;
+  height: 3px;
+
+  background-color: black;
 }
+.modal-close::before {
+	transform: rotate(45deg);
+  }
+  
+  .modal-close::after {
+	transform: rotate(-45deg);
+  }
 .feedback textarea {
 	border-style: solid;
 	border-width: 1px;
@@ -1489,6 +1528,24 @@ input[type="radio"]:disabled+label span {
 	padding-top: 20px;
 	float: left;
 }
+.feedback-show{
+	display:block;
+	animation: bounce 1s;
+}
+.overlay-show{
+	display:block;
+	animation: dance 2s;
+}
+@keyframes dance {
+	0% { opacity: 0;}
+	100% { opacity: 1;}
+	}
+
+
+@keyframes bounce {
+		0% { opacity: 0; -webkit-transform: scale(0.5); }
+		100% { opacity: 1; -webkit-transform: scale(1); }
+		}
 /*Попап конец*/
 
 /*Изменение рамок форм */
