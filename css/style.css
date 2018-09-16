@@ -1,10 +1,9 @@
 
 body {
 	font-family: "ROBOTO", Arial, sans-serif;
-	background-color: #E0FFFF; /* шрифт+боковой фон для сайта чтоб удобнее было верстать*/
 }
 .body-center {
-	width: 1200px;
+	min-width: 1200px;
 	background-color: #849d8f;
 	font-size: 16px;
 	margin: 0 auto;
@@ -14,12 +13,23 @@ body {
 	background-position: top center;
 	transition: background-image 0.5s ease, background-color 0.5s ease; /* центральный блок для каталога*/
 }
+.body-conteiner {
+	width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 .body-catalog {
 	width: 1200px;
-	background-color: #849d8f;
 	font-size: 16px;
 	margin: 0 auto;
 	min-width: 940px; /*центральный блок для каталога*/
+}
+.body-conteiner-catalog {
+	min-width: 1200px;
+	background-color: #849d8f;
+	font-size: 16px;
+	margin: 0 auto;
+	min-width: 940px;
 }
 
 a {
@@ -37,7 +47,7 @@ a {
 }
 .slider {
 	position: relative;
-	padding-top: 321px;
+	padding-top: 255px;
 	text-align: center;
 	color: #ffffff;
 }
@@ -52,7 +62,6 @@ a {
 	margin-bottom: 27px;
 	font-size: 60px;
 	line-height: 60px;
-	font-weight: 800;
 }
 .slider .button {
 	display: inline-block;
@@ -111,21 +120,21 @@ a {
 .slide {
 	display: none;
 }
-#product-1:checked~.body-center #slide1, #product-2:checked~.body-center #slide2, #product-3:checked~.body-center #slide3 {
+.product-1:checked~.body-center #slide1, .product-2:checked~.body-center #slide2, .product-3:checked~.body-center #slide3 {
 	display: block;
 }
-#product-1:checked~.body-center label[for="product-1"], #product-2:checked~.body-center label[for="product-2"], #product-3:checked~.body-center label[for="product-3"] {
+.product-1:checked~.body-center label[for="product-1"], .product-2:checked~.body-center label[for="product-2"], .product-3:checked~.body-center label[for="product-3"] {
 	background-color: #ffffff;
 }
-#product-1:checked~.body-center {
+.product-1:checked~.body-center {
 	background-color: #849d8f;
 	background-image: url("../img/fon_ice_klub.png");
 }
-#product-2:checked~.body-center {
+.product-2:checked~.body-center {
 	background-color: #8996a6;
 	background-image: url("../img/fon_ice_shoko.png");
 }
-#product-3:checked~.body-center {
+.product-3:checked~.body-center {
 	background-color: #9d8b84;
 	background-image: url("../img/fon_ice_vanille.png");
 }
@@ -186,6 +195,8 @@ a {
 /* Блок Промо с вафлей Начало */
 .promo {
 	background-image: url("../img/blog_fon_vaflya.png");
+	background-color:rgb(255, 228, 181);
+	border-radius: 15px;
 	background-repeat: no-repeat;
 	display: flex;
 	flex-wrap: wrap;
@@ -238,6 +249,8 @@ h1 {
 .blog-new {
 	background-image: url("../img/blog_fon_straw.png");
 	background-repeat: no-repeat;
+	
+	border-radius: 15px;
 	min-width: 560px;
 	min-height: 220px;
 	margin-right: 13px;
@@ -251,6 +264,8 @@ h1 {
 .subscribe {
 	background-image: url("../img/pochta.png");
 	background-repeat: no-repeat;
+	
+	border-radius: 15px;
 	min-width: 560px;
 	min-height: 220px;
 	margin-left: 13px;
@@ -562,7 +577,7 @@ footer a:hover, body a:hover {
 	position: relative;
 	left: 27px;
 	top: 10px;
-	height:4px;
+	height:64px;
 	width:154px;
 }/* логотип*/
 
@@ -867,10 +882,10 @@ li:hover .b-text {
 	margin-top: -10px;
 }
 .unit2 {
-	max-width: 15px;
-	height: 17px;
+	width: 11px;
+	height: 11px;
 	margin-top: 0;
-	width:11px;
+
 }
 unit3 {
 	max-width: 160px;
@@ -1493,7 +1508,6 @@ input[type="radio"]:disabled+label span {
 .modal-close::before {
 	transform: rotate(45deg);
   }
-  
   .modal-close::after {
 	transform: rotate(-45deg);
   }
