@@ -120,7 +120,7 @@ a {
 .slide {
 	display: none;
 }
-.product-1:checked~.body-center #slide1, .product-2:checked~.body-center #slide2, .product-3:checked~.body-center #slide3 {
+.product-1:checked~.body-center .slide1, .product-2:checked~.body-center .slide2, .product-3:checked~.body-center .slide3 {
 	display: block;
 }
 .product-1:checked~.body-center label[for="product-1"], .product-2:checked~.body-center label[for="product-2"], .product-3:checked~.body-center label[for="product-3"] {
