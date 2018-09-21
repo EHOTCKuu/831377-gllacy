@@ -463,7 +463,7 @@ body {
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
     font-size: 16px;
-    width: 338px;
+    width: 355px;
     min-height: 24px;
     padding-left: 12px;
     color: rgba(17, 10, 10, 0.301);
@@ -600,11 +600,12 @@ body {
 
 .adress {
     line-height: 0.5;
-    margin-bottom: 30px;
+    margin-bottom: 34px;
 }
 
 .order {
     line-height: 0.7;
+   
 }
 
 /* Блок карта конец */
@@ -803,12 +804,12 @@ footer a:hover, body a:hover {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 280px;
+    width: 247px;
     list-style-type: none;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-top: 22px;
+    margin-top: 24px;
 }
 
 .user-control li {
@@ -826,23 +827,68 @@ footer a:hover, body a:hover {
 .user-control a {
     border: none;
     text-decoration: none;
+   
 }
 
+.user-control-activ {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 259px;
+    list-style-type: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.user-control-activ li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 300px;
+}
+
+.user-control-activ li:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.user-control-activ a {
+    border: none;
+    text-decoration: none;
+   
+}
 a.basket {
-    background: url(../img/header_trash.png) 27px 7px no-repeat;
+    background: url(../img/header_trash.png) 15px 4px no-repeat;
     display: block;
     height: 19px;
-    width: 21px;
-    padding: 6px 15px 6px 100px;
+    width: 16px;
+    padding: 6px 15px 7px 70px;
     border-radius: 100px;
+    font-size: 14px;
 }
-
+a.basket-activ {
+    background: url(../img/header_trash_activ.png) 17px 4px no-repeat;
+    display: block;
+    height: 14px;
+    width: 32px;
+    padding: 8px 15px 10px 70px;
+    border-radius: 100px;
+    font-size: 14px;
+    background-color:white;
+    color:black;
+}
 a.enter {
-    background: url(../img/header_inter.png) 17px 6px no-repeat;
+    background: url(../img/header_inter.png) 16px 5px no-repeat;
     display: block;
     height: 19px;
     width: 50px;
-    padding: 6px 0 7px 45px;
+    padding: 6px 0 7px 43px;
+    font-size: 14px;
 }
 
 a.search-enter {
@@ -851,6 +897,7 @@ a.search-enter {
     height: 17px;
     width: 17px;
     padding: 8px;
+    font-size: 14px;
 }
 
 .login-info {
@@ -879,44 +926,47 @@ a.search-enter {
 
 li:hover .basket {
     color: black;
-    background: url("../img/header_trash_activ.png") 27px 7px no-repeat;
+    background: url("../img/header_trash_off.png") 15px 4px no-repeat;
 }
 
 li:hover .enter {
     color: black;
-    background: url("../img/header_inter-activ.png") 17px 6px no-repeat;
+    background: url("../img/header_inter-activ.png") 16px 5px no-repeat;
 }
 
 li:hover .search-enter {
     color: black;
-    background: url("../img/header_lupa-activ.png") 9px 8px no-repeat;
+    background: url("../img/header_lupa-activ.png") 8px 7px no-repeat;
+}
+li:hover .basket-activ {
+    color: black;
+    background: url("../img/header_trash_activ.png") 17px 4px no-repeat;
 }
 
-li:hover .a-text {
-    display: none;
-}
 
 a .b-text {
     display: none;
 }
 
-li:hover .b-text {
-    display: inline;
-    margin-left: -45px;
-}
 
+.c-text {
+    margin-left: -26px;
+}
 .a-text {
-    margin-left: -36px;
+    margin-left: -26px;
 }
 
 .user-control>li {
     position: relative;
     display: inline-block;
     vertical-align: top;
-    margin-right: -4px;
 }
-
-.user-control .search-form {
+.user-control-activ>li {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+.search-form {
     position: absolute;
     left: -325px;
     display: none;
@@ -1037,7 +1087,7 @@ li:hover .login-form {
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
     width: 539px;
     height: 242px;
-    left: -403px;
+    left: -420px;
     top: 38px;
     display: none;
     margin: 0;
@@ -1427,7 +1477,7 @@ footer {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    margin-top: -10px;
+    margin-top: -16px;
     width: 191px;
 }
 
@@ -1455,7 +1505,7 @@ footer {
 .breadcrumbs {
     font-size: 14px;
     color: white;
-    margin-top: -21px;
+    margin-top: -23px;
     padding-right: 10px;
     word-spacing: 4px;
 }
